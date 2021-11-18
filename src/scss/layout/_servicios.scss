@@ -21,14 +21,14 @@
       color: $negro;
     }
     .precio-servicio {
-      color: $azul;
+      color: $rojo;
       margin: 0;
       font-size: 3rem;
       font-weight: $bold;
     }
 
     &.seleccionado {
-      background-color: $azul;
+      background-color: $rojo;
 
       p {
         color: $blanco;
