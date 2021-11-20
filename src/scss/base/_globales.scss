@@ -1,51 +1,33 @@
+@use 'variables' as v;
+
 html {
-  font-size: 62.5%;
-  box-sizing: border-box;
-}
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
+    font-size: 62.5%;
+    box-sizing: border-box;
+    height: 100%;
 }
 body {
-  font-family: $fuente_principal;
-  font-size: 1.6rem;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: v.$negro;
+    color: v.$blanco;
 }
-p {
-  color: $blanco;
-  font-size: 2rem;
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: v.$fuente_principal;
+    font-size: 1.6rem;
 }
 .contenedor {
-  width: 95%;
-  max-width: 1200px;
-  margin: 0 auto;
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
-
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 img {
-  max-width: 100%;
-}
-
-h1,
-h2,
-h3 {
-  font-family: $fuente_principal;
-  margin: 0 0 $separacion / 2 0;
-  font-weight: 900;
-  color: $rojo;
-  text-align: center;
-}
-
-h1 {
-  font-size: 4rem;
-}
-h2 {
-  font-size: 3.6rem;
-}
-h3 {
-  font-size: 3rem;
-  text-align: center;
+    max-width: 100%;
 }
